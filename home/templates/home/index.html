@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RxMarket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .navbar {
+            background-color: #f4f2ed;
+        }
+        .navbar-brand {
+            font-family: "Stuart", "Stuart fallback", Georgia, serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #292929;
+        }
+        .navbar-nav .nav-link {
+            font-family: "Graphik", "Graphik fallback", "Helvetica Neue", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(12, 11, 8, 0.75);
+        }
+        .search-bar {
+            width: 400px; /* Set width for the search bar */
+            margin-right: 20px; /* Space between search bar and icons */
+        }
+        .search-bar input {
+            width: 100%; /* Makes the input field take the full width of the search bar */
+            border: 1px solid #928b80; /* Set border color */
+            border-radius: 4px; /* Optional: Add border radius for rounded corners */
+        }
+        .search-bar input:focus {
+            border-color: #6c757d; /* Change border color on focus */
+            outline: none; /* Remove default outline */
+        }
+        @media (max-width: 768px) {
+            .search-bar {
+                width: 100%; /* Full width on smaller screens */
+                margin-right: 0; /* Reset right margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="navbar-brand d-flex align-items-center">
+                <span class="ml-2">RxMarket</span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="search-bar">
+                    <form class="form-inline">
+                        <div class="input-group w-100">
+                            <input class="form-control" type="search" placeholder="Search for medicines & health products" aria-label="Search">
+                            <div class="input-group-append bg-white">
+                                <button class="btn btn-outline-secondary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i> Sign in
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
