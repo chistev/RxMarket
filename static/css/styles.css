@@ -80,9 +80,17 @@ body {
     margin-top: 30px;
 }
 
+.category-item {
+    background-color: #f4f2ed; /* Set the background color */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Optional: add rounded corners */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add space between items */
+}
+
 .category-grid img {
-    width: 100px;
-    height: 100px;
+    width: 150px;  /* Increased width */
+    height: 150px; /* Increased height */
     object-fit: contain;
     margin-bottom: 10px;
 }
