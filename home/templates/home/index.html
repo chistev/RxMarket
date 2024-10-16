@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,102 +8,7 @@
     <title>RxMarket</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            background-color: #ffffff;
-        }
-
-        .navbar {
-            background-color: #f4f2ed;
-        }
-
-        .navbar-brand {
-            font-family: "Stuart", "Stuart fallback", Georgia, serif;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 30px;
-            color: #292929;
-        }
-
-        .navbar-nav .nav-link {
-            font-family: "Graphik", "Graphik fallback", "Helvetica Neue", sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
-            color: rgba(12, 11, 8, 0.75);
-        }
-
-        .search-bar {
-            width: 400px;
-            margin-right: 20px;
-        }
-
-        .search-bar input {
-            width: 100%;
-            border: 1px solid #928b80;
-            border-radius: 4px;
-        }
-
-        .search-bar input:focus {
-            border-color: #6c757d;
-            outline: none;
-        }
-
-        @media (max-width: 768px) {
-            .search-bar {
-                width: 100%;
-                margin-right: 0;
-            }
-        }
-
-        /* Green container */
-        .green-container {
-            background-color: #2b7a78;
-            height: 10px;
-            width: 100%;
-        }
-
-        /* Logo section */
-        .logo-section {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #f4f2ed;
-        }
-
-        .logo-section h1 {
-            font-family: "Stuart", "Stuart fallback", Georgia, serif;
-            font-size: 36px;
-            font-weight: bold;
-            color: #2b7a78;
-        }
-
-        .logo-section p {
-            font-family: "Graphik", "Helvetica Neue", sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            color: rgba(66, 59, 47, 0.75);
-        }
-
-        /* Category styles */
-        .category-grid {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .category-grid img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            margin-bottom: 10px;
-        }
-
-        .category-title {
-            font-family: "Graphik", "Helvetica Neue", sans-serif;
-            font-size: 16px;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
@@ -158,35 +64,35 @@
     <div class="container category-grid">
         <div class="row">
             <div class="col-md-3 col-6">
-                <img src="images/prescription-drugs.jpg" alt="Prescription Drugs">
+                <img src="{% static 'images/prescription-drugs.jpg' %}" alt="Prescription Drugs">
                 <div class="category-title">Prescription Drugs</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/otc-meds.jpg" alt="Over-the-Counter Medications">
+                <img src="{% static 'images/otc-meds.jpg' %}" alt="Over-the-Counter Medications">
                 <div class="category-title">OTC Medications</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/vitamins.jpg" alt="Vitamins & Supplements">
+                <img src="{% static 'images/vitamins.jpg' %}" alt="Vitamins & Supplements">
                 <div class="category-title">Vitamins & Supplements</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/pain-relief.jpg" alt="Pain Relief">
+                <img src="{% static 'images/pain-relief.jpg' %}" alt="Pain Relief">
                 <div class="category-title">Pain Relief</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/cough-cold.jpg" alt="Cough & Cold">
+                <img src="{% static 'images/cough-cold.jpg' %}" alt="Cough & Cold">
                 <div class="category-title">Cough & Cold</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/diabetes.jpg" alt="Diabetes Care">
+                <img src="{% static 'images/diabetes.jpg' %}" alt="Diabetes Care">
                 <div class="category-title">Diabetes Care</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/allergy.jpg" alt="Allergy Medications">
+                <img src="{% static 'images/allergy.jpg' %}" alt="Allergy Medications">
                 <div class="category-title">Allergy Medications</div>
             </div>
             <div class="col-md-3 col-6">
-                <img src="images/skincare.jpg" alt="Skincare Products">
+                <img src="{% static 'images/skincare.jpg' %}" alt="Skincare Products">
                 <div class="category-title">Skincare Products</div>
             </div>
         </div>
