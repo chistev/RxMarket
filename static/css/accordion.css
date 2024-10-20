@@ -1,0 +1,42 @@
+.accordion .card {
+    border: none;
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(66, 59, 47, 0.2); 
+}
+
+
+.accordion .card-header {
+    background-color: transparent;
+    border: none;
+}
+
+.accordion .card:last-child {
+    border-bottom: 1px solid rgba(66, 59, 47, 0.2); 
+}
+
+.faq-btn {
+    font-family: Graphik, "Graphik fallback", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(12, 11, 8, 0.75);
+}
+
+.faq-btn:hover {
+    text-decoration: none;
+}
+
+.accordion .card-body {
+    font-family: Graphik, "Graphik fallback", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(12, 11, 8, 0.75);
+}
+
+.fas.fa-chevron-down {
+    color: rgba(66, 59, 47, 0.75);
+}
+
+.fas.fa-chevron-down.collapsed {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
