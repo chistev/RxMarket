@@ -44,3 +44,10 @@ body {
         margin-right: 0;
     }
 }
+
+/* Green container */
+.green-container {
+    background-color: #2b7a78;
+    height: 10px;
+    width: 100%;
+}
