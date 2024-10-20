@@ -2,7 +2,6 @@ body {
     background-color: #ffffff;
 }
 
-/* Logo section */
 .logo-section {
     text-align: center;
     padding: 20px 0;
@@ -24,29 +23,41 @@ body {
     color: rgba(66, 59, 47, 0.75);
 }
 
-/* Category styles */
 .category-grid {
     text-align: center;
     margin-top: 30px;
 }
 
 .category-item {
-    background-color: #f4f2ed; /* Set the background color */
-    padding: 10px; /* Add some padding */
-    border-radius: 5px; /* Optional: add rounded corners */
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Add space between items */
+    background-color: #f4f2ed; 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+    margin-bottom: 20px;
 }
 
 .category-grid img {
-    width: 150px;  /* Increased width */
-    height: 150px; /* Increased height */
+    width: 150px;  
+    height: 150px; 
     object-fit: contain;
     margin-bottom: 10px;
 }
 
 .category-title {
-    font-family: "Graphik", "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    color: #333;
+    font-family: "Family Graphik", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(12, 11, 8, 0.75);
 }
+.category-heading {
+    font-family: "Stuart", "Stuart fallback", Georgia, serif; 
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 32px; 
+    line-height: 36px; 
+    color: rgba(12, 11, 8, 0.75);
+    margin-top: 30px; 
+}
+
