@@ -1,147 +1,91 @@
+
+{% extends 'home/base.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RxMarket</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
-    <link rel="stylesheet" href="{% static 'css/accordion.css' %}">
-</head>
+{% block title %}Home - RxMarket{% endblock %}
 
-<body>
-    {% include 'home/navbar.html' %}
+{% block content %}
 
-    <div class="green-container"></div>
-
-    <div class="logo-section">
-        <h1>RxMarket</h1>
-        <p>Your trusted source for health and wellness products.</p>
-    </div>
-
-    <!-- Deals by category heading -->
-    <div class="container mt-5">
-        <h2 class="category-heading">Deals by category</h2>
-    </div>
-
-    <div class="container category-grid">
-        <div class="row">
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/prescription-drugs.jpg' %}" alt="Prescription Drugs">
-                </div>
-                <div class="category-title">Prescription Drugs</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/otc-meds.jpg' %}" alt="Over-the-Counter Medications">
-                </div>
-                <div class="category-title">OTC Medications</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/vitamins.jpg' %}" alt="Vitamins & Supplements">
-                </div>
-                <div class="category-title">Vitamins & Supplements</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/pain-relief.jpg' %}" alt="Pain Relief">
-                </div>
-                <div class="category-title">Pain Relief</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/cough-cold.jpg' %}" alt="Cough & Cold">
-                </div>
-                <div class="category-title">Cough & Cold</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/diabetes.jpg' %}" alt="Diabetes Care">
-                </div>
-                <div class="category-title">Diabetes Care</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/allergy.jpg' %}" alt="Allergy Medications">
-                </div>
-                <div class="category-title">Allergy Medications</div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="category-item">
-                    <img src="{% static 'images/skincare.jpg' %}" alt="Skincare Products">
-                </div>
-                <div class="category-title">Skincare Products</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="green-container mt-5"></div>
-    <!-- Promotional Section -->
-    <div class="promo-section container mt-5">
-        <div class="row">
-            <!-- Left Section: Promo Details -->
-            <div class="col-md-6 text-center">
-                <div class="promo-products">
-                    <img src="{% static 'images/vitamins.jpg' %}" alt="Vitamins" class="promo-img">
-                    <img src="{% static 'images/promo_image.jpg' %}" alt="Prescription Drugs" class="promo-img">
-                </div>
-            </div>
-            <!-- Right Section: About RxMarket -->
-            <div class="col-md-6">
-                <h3>About RxMarket</h3>
-                <p>Welcome to RxMarket, your trusted source for affordable health products all year round. Expect no outdated items—just top-quality, well-tested products designed to meet your healthcare needs at unbeatable prices.</p>
-                <p>We are dedicated to your wellness, and we're here to help you achieve it every step of the way.</p>
-                <p>Stay healthy,</p>
-                <p><strong>The RxMarket Team</strong></p>
-            </div>
-        </div>
-    </div>
-    
-    {% include 'home/accordion.html' %}
-
-    <div class="green-container"></div>
-
-   <!-- Email Signup Section -->
-<div class="container mt-5">
-    <h3 class="text-center rxmarket-heading mb-3">Sign up for RxMarket emails</h3>
-    <form class="form-inline justify-content-center">
-        <div class="input-group mb-2">
-            <input type="email" class="form-control" placeholder="Enter your email" required>
-            <div class="input-group-append">
-                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary ml-2 mb-2">Sign me up!</button>
-    </form>
+<!-- Deals by category heading -->
+<div class="mt-5">
+    <h2 class="category-heading">Deals by category</h2>
 </div>
 
-<footer class="footer mt-5">
-    <div class="container text-center">
-        <a href="https://twitter.com/chistev12" target="_blank" class="social-icon">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <p class="footer-text">
-            &copy; <span id="current-year"></span> RxMarket. All rights reserved.
-        </p>
+<div class="category-grid">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/prescription-drugs.jpg' %}" alt="Prescription Drugs">
+            </div>
+            <div class="category-title">Prescription Drugs</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/otc-meds.jpg' %}" alt="Over-the-Counter Medications">
+            </div>
+            <div class="category-title">OTC Medications</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/vitamins.jpg' %}" alt="Vitamins & Supplements">
+            </div>
+            <div class="category-title">Vitamins & Supplements</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/pain-relief.jpg' %}" alt="Pain Relief">
+            </div>
+            <div class="category-title">Pain Relief</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/cough-cold.jpg' %}" alt="Cough & Cold">
+            </div>
+            <div class="category-title">Cough & Cold</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/diabetes.jpg' %}" alt="Diabetes Care">
+            </div>
+            <div class="category-title">Diabetes Care</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/allergy.jpg' %}" alt="Allergy Medications">
+            </div>
+            <div class="category-title">Allergy Medications</div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="category-item">
+                <img src="{% static 'images/skincare.jpg' %}" alt="Skincare Products">
+            </div>
+            <div class="category-title">Skincare Products</div>
+        </div>
     </div>
-</footer>
+</div>
 
-<script>
-    // Get the current year
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-</script>
+<!-- Promotional Section -->
+<div class="promo-section mt-5">
+    <div class="row">
+        <!-- Left Section: Promo Details -->
+        <div class="col-md-6 text-center">
+            <div class="promo-products">
+                <img src="{% static 'images/vitamins.jpg' %}" alt="Vitamins" class="promo-img">
+                <img src="{% static 'images/promo_image.jpg' %}" alt="Prescription Drugs" class="promo-img">
+            </div>
+        </div>
+        <!-- Right Section: About RxMarket -->
+        <div class="col-md-6">
+            <h3>About RxMarket</h3>
+            <p>Welcome to RxMarket, your trusted source for affordable health products all year round. Expect no outdated items—just top-quality, well-tested products designed to meet your healthcare needs at unbeatable prices.</p>
+            <p>We are dedicated to your wellness, and we're here to help you achieve it every step of the way.</p>
+            <p>Stay healthy,</p>
+            <p><strong>The RxMarket Team</strong></p>
+        </div>
+    </div>
+</div>
 
+{% include 'home/accordion.html' %}
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+{% endblock %}
