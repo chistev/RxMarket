@@ -61,3 +61,57 @@ body {
     color: rgba(12, 11, 8, 0.75);
     margin-top: 30px; 
 }
+
+/* Targeting the email signup section specifically */
+.mt-5 > h3.rxmarket-heading {
+    font-family: "Family Graphik", "Graphik fallback", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #292929;
+}
+
+.mt-5 > form.form-inline .input-group {
+    width: 100%;
+    max-width: 400px; 
+}
+
+.mt-5 > form.form-inline .input-group .form-control {
+    border: 1px solid #928b80; 
+    border-radius: 4px 0 0 4px; 
+    padding: 10px;
+}
+
+.mt-5 > form.form-inline .input-group .form-control:focus {
+    border-color: #6c757d;
+    outline: none;
+}
+
+.mt-5 > form.form-inline .input-group .input-group-text {
+    background-color: #f4f2ed; 
+    border: 1px solid #928b80; 
+    border-left: none; 
+    border-radius: 0 4px 4px 0; 
+    padding: 10px; 
+}
+
+.mt-5 > form.form-inline .btn {
+    background-color: #4e4d49; 
+    border: none; 
+    font-family: Graphik, "Graphik fallback", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #f9f8f6;
+}
+
+.rxmarket-heading {
+    font-family: "Family Graphik", "Graphik fallback", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #292929;
+}
+
