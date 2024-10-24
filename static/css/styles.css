@@ -115,3 +115,28 @@ body {
     color: #292929;
 }
 
+
+.footer {
+    background-color: #f4f2ed;
+    padding: 20px 0;
+}
+
+.footer-text {
+    font-family: "Graphik", "Graphik fallback", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #616161;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #616161;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #1a5d5b;
+}
